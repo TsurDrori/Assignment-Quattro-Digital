@@ -1,0 +1,186 @@
+.form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  .form-header-nav {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.3rem;
+    & > :not(:first-child)::after {
+      margin-left: 6px;
+      content: "<";
+    }
+    & > .active {
+      color: $red;
+    }
+
+    & >*{
+
+      @media (min-width: 200px){
+        font-size: 0.8rem;
+      }
+      @media (min-width: 400px){
+        font-size: 1rem;
+      }
+      @media (min-width: 750px){
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.form {
+  .user-details-title {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    span {
+      margin-right: 0.2rem;
+      color: $red;
+    }
+  }
+  .address-title {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  .mail-reception-checkbox {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    input[type=checkbox]{
+      transform: scale(2);
+      margin-left: 10px;
+    }
+
+  }
+}
+.input-container {
+  border: 2px solid $light-gray;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  h4 {
+    margin-right: 5px;
+    span {
+      color: $red;
+    }
+  }
+  & > * {
+    border: unset;
+    padding: 3px 5px;
+    text-align: right;
+    &::placeholder {
+      color: black;
+      font-size: 1rem;
+      margin-right: 5px;
+    }
+  }
+}
+.two-input-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  text-align: right;
+  & > * {
+    flex: 1;
+  }
+}
+
+.three-input-container {
+  display: flex;
+  gap: 15px;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  &>:first-child {
+    flex: 2.1;
+  }
+  & > :not(:first-child){
+    flex: 1
+  }
+}
+
+.form-nav-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+
+  .back-link{
+    color: $red;
+  }
+}
+.submit-button{
+  background-color: $red;
+  border: unset;
+  border-radius: 1000px;
+  color: white;
+  font-size: 1.1rem;
+  padding: 16px;
+  width: max(250px,40vw);
+
+}
+
+
+.login-modal{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 25%);
+  padding: 120px 50px 24px 50px;
+  min-width: 350px;
+  text-align: right;
+.close-window{
+  position: absolute;
+    left: 94%;
+    top: -5%;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    border: unset;
+    background: white;
+    box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 25%);
+}
+  img{
+    position: absolute;
+    right: 50%;
+    top: 20px;
+    transform: translate(50%, 0);
+  }
+  .forgot-password-link{
+    text-decoration: underline;
+    margin-bottom: 20px ;
+  }
+  h1{
+    @media (min-width: 300px){
+      font-size: 1.6rem;
+    }
+    @media (min-width: 750px){
+      font-size: 2rem;
+    }
+    @media (min-width: 1000px){
+      font-size: 3rem;
+    }
+    margin-bottom: 20px ;
+  }
+  .input-container{
+    width: 100%;
+  }
+}

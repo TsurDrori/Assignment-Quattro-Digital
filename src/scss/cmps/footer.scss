@@ -1,0 +1,17 @@
+.app-footer-container{
+  background-color: rgb(47, 48, 54);
+  height: 10vh;
+
+}
+.app-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* backdrop-filter: blur(20px); */
+  /* border: 3px solid rgba(255, 255, 255, 0.125); */
+font-size: 0.5rem;
+  color: rgb(146, 146, 146);
+  /* position:absolute;
+  bottom:0;
+  width:100%;   */
+}

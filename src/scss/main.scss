@@ -1,0 +1,17 @@
+//basics
+@import './basics/base.scss';
+@import './basics/helpers.scss';
+
+//setup
+@import './setup/fonts.scss';
+@import './setup/mixin.scss';
+@import './setup/variables.scss';
+
+//cmps
+@import './cmps/header.scss';
+@import './cmps/footer.scss';
+
+//pages
+@import './pages/about.scss';
+@import './pages/forms.scss';
+

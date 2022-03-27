@@ -1,0 +1,48 @@
+.app-header-container {
+    height: 3rem;
+    background-color: rgb(47, 48, 54);
+    align-items: center;
+    .app-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        .header-logo {
+            font-size: 0.8rem;
+        }
+        .main-nav a {
+            text-decoration: none;
+            color: inherit;
+            &.active {
+                color: $red;
+            }
+        }
+        .main-nav {
+            height: 100%;
+            .nav-btn-div {
+                display: inline-block;
+                align-items: center;
+                text-align: center;
+                height: 100%;
+                padding: 0.75rem;
+                transition: 0.5s;
+                border-inline-end: 2px solid #dfe5e7;
+
+                // &:last-child {
+                //     border-inline-end: 0 solid #dfe5e7;
+                // } // why is this not choosing last child of nav links?
+
+                &.home {
+                    border-inline-start: 2px solid #dfe5e7;
+                }
+                &:hover {
+                    color: $red;
+                    /* backdrop-filter: blur(11px) saturate(77%); */
+                    background-color: rgba(243, 245, 247, 0.12);
+                    box-shadow: inset 0px -2px 0 $red;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
